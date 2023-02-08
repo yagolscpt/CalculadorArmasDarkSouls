@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DarkSouls</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Aquí va tu código html -->
+    <h1 class="text-5xl flex justify-center ">DarkSouls</h1>
+    <h2 class="text-3xl flex justify-center">¿Puedo usar este arma?</h2>
+    <form  class= " flex flex-col items-center" id="form">
+      <div class="border rounded-md flex flex-col p-3 m-5 max-w-xl">
+        <div class="flex flex-col justify-between md:flex-row">
+          Indica tu nivel de Fe (faith) <input type="number" name="faith" id="faith">
+        </div>
+        <div class="flex flex-col justify-between md:flex-row">
+          Indica tu nivel de Fortaleza (strength) <input type="number" name="strength" id="strength">
+        </div>
+        <div class="flex flex-col justify-between md:flex-row">
+          Indica tu nivel de Inteligencia (intelligence) <input type="number" name="intelligence" id="intelligence">
+        </div>
+        <div class="flex flex-col justify-between md:flex-row">
+          Indica tu nivel de Destreza (dexterity) <input type="number" name="dexterity" id="dexterity">
+        </div>
+      </div>
+      <div class="flex flex-col p-3 m-5 justify-center items-center border rounded-md md:flex-row gap-5">
+        Nombre del arma: <input class="p-2 border border-blue-600" type="text" name="name" id="name" value="Four-Pronged Plow">
+      </div>
+      <div class="flex justify-center">
+        <button class="border-blue-500 rounded p-1 md:p-2 text-black hover:bg-blue-400" type="submit" id="btn">Calcular</button>
+      </div>
+ 
+    </form>
+    <div class="p-5" id="canUse"></div>
+  </div>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
